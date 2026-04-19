@@ -1,0 +1,24 @@
+{
+  "name": "ailib-wasm-browser",
+  "type": "module",
+  "collaborators": [
+    "AI-Protocol Team"
+  ],
+  "description": "Browser WASM module exposing ai-lib-core protocol logic via wasm-bindgen",
+  "version": "0.1.0",
+  "license": "MIT OR Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hiddenpath/ai-wasm-test"
+  },
+  "files": [
+    "ailib_wasm_bg.wasm",
+    "ailib_wasm.js",
+    "ailib_wasm.d.ts"
+  ],
+  "main": "ailib_wasm.js",
+  "types": "ailib_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

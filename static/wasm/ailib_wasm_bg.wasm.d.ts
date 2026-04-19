@@ -1,0 +1,32 @@
+/* tslint:disable */
+/* eslint-disable */
+export const memory: WebAssembly.Memory;
+export const __wbg_buildresult_free: (a: number, b: number) => void;
+export const __wbg_errorclassresult_free: (a: number, b: number) => void;
+export const __wbg_parseresult_free: (a: number, b: number) => void;
+export const __wbg_streameventresult_free: (a: number, b: number) => void;
+export const build_chat_request: (a: number, b: number, c: number, d: number, e: number, f: number, g: number) => [number, number, number];
+export const buildresult_body: (a: number) => [number, number];
+export const buildresult_stream: (a: number) => number;
+export const classify_error: (a: number) => number;
+export const errorclassresult_category: (a: number) => [number, number];
+export const errorclassresult_code: (a: number) => number;
+export const errorclassresult_name: (a: number) => [number, number];
+export const errorclassresult_retryable: (a: number) => number;
+export const is_stream_done: (a: number, b: number) => number;
+export const parse_chat_response: (a: number, b: number) => [number, number, number];
+export const parse_stream_event: (a: number, b: number) => [number, number, number];
+export const parseresult_completion_tokens: (a: number) => bigint;
+export const parseresult_content: (a: number) => [number, number];
+export const parseresult_finish_reason: (a: number) => [number, number];
+export const parseresult_prompt_tokens: (a: number) => bigint;
+export const parseresult_total_tokens: (a: number) => bigint;
+export const streameventresult_data: (a: number) => [number, number];
+export const streameventresult_done: (a: number) => number;
+export const streameventresult_event_type: (a: number) => [number, number];
+export const __wbindgen_externrefs: WebAssembly.Table;
+export const __wbindgen_malloc: (a: number, b: number) => number;
+export const __wbindgen_realloc: (a: number, b: number, c: number, d: number) => number;
+export const __externref_table_dealloc: (a: number) => void;
+export const __wbindgen_free: (a: number, b: number, c: number) => void;
+export const __wbindgen_start: () => void;

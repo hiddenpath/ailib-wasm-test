@@ -1,0 +1,3 @@
+[workspace]
+members = ["crates/wasm-browser", "crates/server"]
+resolver = "2"

@@ -1,0 +1,28 @@
+[package]
+name = "ai-wasm-test-server"
+version = "0.1.0"
+edition = "2021"
+authors = ["AI-Protocol Team"]
+license = "MIT OR Apache-2.0"
+description = "Backend proxy server for ai-wasm-test browser chat demo"
+repository = "https://github.com/hiddenpath/ai-wasm-test"
+rust-version = "1.75"
+
+[[bin]]
+name = "ai-wasm-test-server"
+path = "src/main.rs"
+
+[dependencies]
+axum = { version = "0.8", features = ["macros"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+curl = { version = "0.4", features = ["static-curl"] }
+tower-http = { version = "0.6", features = ["cors", "fs"] }
+anyhow = "1.0"
+tokio-stream = { version = "0.1", features = ["io-util"] }
+
+[dev-dependencies]
+tokio-test = "0.4"
+tower = "0.5"
+http-body-util = "0.1"
